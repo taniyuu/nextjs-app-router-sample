@@ -24,6 +24,13 @@ const authOptions: AuthOptions = {
       },
     }),
   ],
+  pages: {
+    signIn: "/login",
+    signOut: "/login", // disable to view default page
+    error: "/login", // disable to view default page
+    verifyRequest: "/login", // disable to view default page
+    newUser: "/login", // disable to view default page
+  },
 };
 
 const handler = NextAuth(authOptions);
